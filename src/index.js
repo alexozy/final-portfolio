@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import "bootswatch/dist/pulse/bootstrap.min.css";
+// import "bootswatch/dist/pulse/bootstrap.min.css";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
