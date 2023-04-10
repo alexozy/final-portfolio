@@ -1,13 +1,6 @@
-// import React, {useState} from 'react';
+import React, {useState} from 'react';
 
-// import Home from './Home';
-// import Contact from './Contact';
+// import all pages to header to match nav options
 
-// function Header () {
-//     return (
 
-//         // add styling and how you'd like the page to look.
-//       )
-// }
-
-// export default Header;
+import Portfolio from '';
