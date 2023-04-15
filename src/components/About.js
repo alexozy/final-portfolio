@@ -1,123 +1,62 @@
 import React from 'react';
-import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
-import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
-import {
-  MDBBtn,}
-from 'mdb-react-ui-kit';
-import '../App.css';
-// the listings will display here!
-// this is a 3 equal section grid;  the yardd cards will stack equally across.
-function MyYards() {
+import Me from "../assets/me.jpeg";
+import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardBody, MDBCardImage, MDBBtn, MDBTypography, MDBIcon } from 'mdb-react-ui-kit';
+
+export default function ProfileStatistics() {
   return (
-    <div> 
-    <MDBRow>
-      <MDBCol md='4'>
-      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Typical_suburban_backyard.jpg/220px-Typical_suburban_backyard.jpg" />
-      <Card.Body>
-        <Card.Title>Yard Name</Card.Title>
-        <Card.Text>
-         This is a quick description of the yard.
-        </Card.Text>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item>City</ListGroup.Item>
-        <ListGroup.Item>Water? Yes or No</ListGroup.Item>
-        <ListGroup.Item><MDBBtn className='w-30 mb-4 cardbtns' size='sm'  type='delete' color='warning'>Delete</MDBBtn><MDBBtn className='w-30 mb-4' size='sm'  type='delete' color='warning'>Edit  </MDBBtn></ListGroup.Item>
-      </ListGroup>
-    </Card>
-      </MDBCol>
-      <MDBCol md='4'>
-      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Typical_suburban_backyard.jpg/220px-Typical_suburban_backyard.jpg" />
-      <Card.Body>
-        <Card.Title>Yard Name</Card.Title>
-        <Card.Text>
-         This is a quick description of the yard.
-        </Card.Text>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item>City</ListGroup.Item>
-        <ListGroup.Item>Water? Yes or No</ListGroup.Item>
-        <ListGroup.Item><MDBBtn className='w-30 mb-4 cardbtns' size='sm'  type='delete' color='warning'>Delete</MDBBtn><MDBBtn className='w-30 mb-4' size='sm'  type='delete' color='warning'>Edit  </MDBBtn></ListGroup.Item>
-      </ListGroup>
-    </Card>
-      </MDBCol>
-      <MDBCol md='4'>
-      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Typical_suburban_backyard.jpg/220px-Typical_suburban_backyard.jpg" />
-      <Card.Body>
-        <Card.Title>Yard Name</Card.Title>
-        <Card.Text>
-         This is a quick description of the yard.
-        </Card.Text>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item>City</ListGroup.Item>
-        <ListGroup.Item>Water? Yes or No</ListGroup.Item>
-        <ListGroup.Item><MDBBtn className='w-30 mb-4 cardbtns' size='sm'  type='delete' color='warning'>Delete</MDBBtn><MDBBtn className='w-30 mb-4' size='sm'  type='delete' color='warning'>Edit  </MDBBtn></ListGroup.Item>
-      </ListGroup>
-    </Card>
-      </MDBCol>
-    </MDBRow>
-
-{/* second row */}
-
-    <MDBRow>
-      <MDBCol md='4'>
-      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Typical_suburban_backyard.jpg/220px-Typical_suburban_backyard.jpg" />
-      <Card.Body>
-        <Card.Title>Yard Name</Card.Title>
-        <Card.Text>
-         This is a quick description of the yard.
-        </Card.Text>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item>City</ListGroup.Item>
-        <ListGroup.Item>Water? Yes or No</ListGroup.Item>
-        <ListGroup.Item><MDBBtn className='w-30 mb-4 cardbtns' size='sm'  type='delete' color='warning'>Delete</MDBBtn><MDBBtn className='w-30 mb-4' size='sm'  type='delete' color='warning'>Edit  </MDBBtn></ListGroup.Item>
-      </ListGroup>
-    </Card>
-      </MDBCol>
-      <MDBCol md='4'>
-      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Typical_suburban_backyard.jpg/220px-Typical_suburban_backyard.jpg" />
-      <Card.Body>
-        <Card.Title>Yard Name</Card.Title>
-        <Card.Text>
-         This is a quick description of the yard.
-        </Card.Text>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item>City</ListGroup.Item>
-        <ListGroup.Item>Water? Yes or No</ListGroup.Item>
-        <ListGroup.Item><MDBBtn className='w-30 mb-4 cardbtns' size='sm'  type='delete' color='warning'>Delete</MDBBtn><MDBBtn className='w-30 mb-4' size='sm'  type='delete' color='warning'>Edit  </MDBBtn></ListGroup.Item>
-      </ListGroup>
-    </Card>
-      </MDBCol>
-      <MDBCol md='4'>
-      <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Typical_suburban_backyard.jpg/220px-Typical_suburban_backyard.jpg" />
-      <Card.Body>
-        <Card.Title>Yard Name</Card.Title>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item>City</ListGroup.Item>
-        <ListGroup.Item>Water? Yes or No</ListGroup.Item>
-        <ListGroup.Item><MDBBtn className='w-30 mb-4 cardbtns' size='sm'  type='delete' color='warning'>Delete</MDBBtn><MDBBtn className='w-30 mb-4' size='sm'  type='delete' color='warning'>Edit  </MDBBtn></ListGroup.Item>
-      </ListGroup>
-    </Card>
-      </MDBCol>
-    </MDBRow>
-
-
+    <div className="vh-100" style={{ backgroundColor: '#eee' }}>
+      <MDBContainer className="container py-5 h-100">
+        <MDBRow className="justify-content-center align-items-center h-100">
+          <MDBCol md="12" xl="4">
+            <MDBCard style={{ borderRadius: '15px' }}>
+              <MDBCardBody className="text-center">
+                <div className="mt-3 mb-4">
+                  <MDBCardImage src={Me}
+                    className="rounded-circle" fluid style={{ width: '100px' }} />
+                </div>
+                <MDBTypography tag="h4">Meet Ozanne Alexander</MDBTypography>
+                <MDBCardText className="text-muted mb-4">
+                  welcome! my name is ozanne and i'm a bootcamp grad. 
+                  please feel free to hop around 
+                 
+                </MDBCardText>
+                <MDBCardText className="text-muted mb-4">
+                  my portfolio and send me a message if you'd like
+                  to work with me on any interesting projects!
+                </MDBCardText>
+                <div className="mb-4 pb-2">
+                  <MDBBtn outline floating>
+                    <MDBIcon fab icon="facebook" size="lg" />
+                  </MDBBtn>
+                  <MDBBtn outline floating className="mx-1">
+                    <MDBIcon fab icon="twitter" size="lg" />
+                  </MDBBtn>
+                  <MDBBtn outline floating>
+                    <MDBIcon fab icon="skype" size="lg" />
+                  </MDBBtn>
+                </div>
+                <MDBBtn rounded size="lg" href=" ">
+                  Message now
+                </MDBBtn>
+                <div className="d-flex justify-content-between text-center mt-5 mb-2">
+                  <div>
+                    <MDBCardText className="mb-1 h5">8471</MDBCardText>
+                    <MDBCardText className="small text-muted mb-0">Life Points</MDBCardText>
+                  </div>
+                  <div className="px-3">
+                    <MDBCardText className="mb-1 h5">500</MDBCardText>
+                    <MDBCardText className="small text-muted mb-0">Followers</MDBCardText>
+                  </div>
+                  <div>
+                    <MDBCardText className="mb-1 h5">Pending...</MDBCardText>
+                    <MDBCardText className="small text-muted mb-0">Total Projects</MDBCardText>
+                  </div>
+                </div>
+              </MDBCardBody>
+            </MDBCard>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
     </div>
-
-    
-    
   );
 }
-
-export default MyYards;

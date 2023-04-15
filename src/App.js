@@ -2,6 +2,7 @@ import React from 'react';
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Portfolio from "./components/Portfolio";
+import About from "./components/About"
 
 function App(){
 // create a function to 
@@ -11,6 +12,7 @@ function App(){
       <Nav/>
 
       <main>
+        <About />
       <Portfolio />
 
       </main>

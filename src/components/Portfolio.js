@@ -17,7 +17,7 @@ function MyYards() {
     <div> 
     <MDBRow>
       <MDBCol md='4'>
-      <Card style={{ width: '18rem' }}>
+      <Card style={{ width: '18rem'}}>
       <a href="https://alexozy.github.io/work-scheduler/"> <Card.Img variant="top" src= {WorkDay} /> </a>
       <Card.Body>
         <Card.Title>Work Day Scheduler App </Card.Title>
