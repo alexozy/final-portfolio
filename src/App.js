@@ -1,16 +1,20 @@
-import React, {useState} from 'react';
-// Import Bootstrap and its deafult variables
-import 'bootstrap/dist/css/bootstrap.css';
-// import logo from './logo.svg';
-// import './App.css';
+import React from 'react';
 import Footer from "./components/Footer";
-import Nav from "./components/Nav"
+import Nav from "./components/Nav";
+import Portfolio from "./components/Portfolio";
 
-function App() {
-  const [currentTab, setCurrentTab] = useState("Home")
+function App(){
+// create a function to 
   return (
     <div>
-  
+
+      <Nav/>
+
+      <main>
+      <Portfolio />
+
+      </main>
+      <Footer/>
     </div>
   );
 }

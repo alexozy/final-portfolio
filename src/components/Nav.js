@@ -1,26 +1,42 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import React, {useEffect} from "react";
-import Container from 'react-bootstrap/Container';
-import Navi from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
+import React, { useState } from 'react';
+import {
+  MDBContainer,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
+  MDBNavbarNav,
+  MDBNavbarLink,
+  MDBIcon,
+  MDBCollapse
+} from 'mdb-react-ui-kit';
 
-function navBar (props){
-    const {setCurrentTab}= props;
+export default function App() {
+  const [showNavSecond, setShowNavSecond] = useState(false);
 
-    return ( <Navbar bg="light" expand="lg">
-    <Container>
-      <Navbar.Brand href="#home">Ozanne Alexander</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Navi className="me-auto">
-          <Navi.Link href="#home">Portfolio</Navi.Link>
-          <Navi.Link href="#link">Work With Me!</Navi.Link>
-        </Navi>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
-);
+  return (
+    <MDBNavbar expand='lg' light bgColor='light'>
+      <MDBContainer fluid>
+        <MDBNavbarBrand href='#'> Ozanne Alexander </MDBNavbarBrand>
+        <MDBNavbarToggler
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+          onClick={() => setShowNavSecond(!showNavSecond)}
+        >
+          <MDBIcon icon='bars' fas />
+        </MDBNavbarToggler>
+        <MDBCollapse navbar show={showNavSecond}>
+          <MDBNavbarNav>
+            <MDBNavbarLink active aria-current='page' href='#'>
+              About Me
+            </MDBNavbarLink>
+            <MDBNavbarLink href='#'>Portfolio</MDBNavbarLink>
+            <MDBNavbarLink href='#'>Contact Me</MDBNavbarLink>
+            <MDBNavbarLink disabled href='#' tabIndex={-1} aria-disabled='true'>
+              Thanks for visiting!
+            </MDBNavbarLink>
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBContainer>
+    </MDBNavbar>
+  );
 }
-
-export default Navi;
