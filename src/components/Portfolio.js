@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBRow, MDBCol } from 'mdb-react-ui-kit';
 import Card from 'react-bootstrap/Card';
-import WorkDay from '../assets/workdayscheduler.png';
+import WorkDay from '../assets/yard-me.herokuapp.com_.png';
 import Weather from '../assets/weather.png';
 import Note from "../assets/localhost_3001_notes.png";
 import ListGroup from 'react-bootstrap/ListGroup';
