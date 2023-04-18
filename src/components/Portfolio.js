@@ -18,14 +18,12 @@ function MyYards() {
     <MDBRow>
       <MDBCol md='4'>
       <Card style={{ width: '18rem'}}>
-      <a href="https://alexozy.github.io/work-scheduler/"> <Card.Img variant="top" src= {WorkDay} /> </a>
+      <a href="https://yard-me.herokuapp.com/"> <Card.Img variant="top" src= {WorkDay} /> </a>
       <Card.Body>
-        <Card.Title>Work Day Scheduler App </Card.Title>
+        <Card.Title> Final Project 3 | YardMe </Card.Title>
         <Card.Text>
-        We were tasked with creating a Scheduler that would allow storing user input into the web's 
-        local storage, running current/local time, and also unique color styling to different time-blocks. 
-        We utilized JQuery, Momentjs, and Bootstrap to make this process straight forward!       
-        Click image to view Live!
+        Need to make some extra cash this summer? Become a YardMe Host today! This application was built with homeowners in mind! Living just outside the city has its perks! 
+        You can rent out your acres to city dwellers with pets who need a yard for their furr-babies to run and explore!
         </Card.Text>
       </Card.Body>
     </Card>
